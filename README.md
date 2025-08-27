@@ -19,13 +19,21 @@
     + 훈련:검증:테스트는 6:2:2 비율로 나눈다.
     + 사용자가 문장을 입력하여 개체명을 인식하고 태깅하여 출력한다.
     + 모델 개발 후 테스트 입력으로 넣을 문장을 ChatGPT를 통해 얻는다.
-<br>
 
-### 1) BERT
-#### 1-1) 학습-검증 오차 그래프
+#### 옵티마이저 및 하이퍼파라미터
+> optimizer = SGD <br>
+> learning rate = 0.00001 <br>
+> weight decay = 0.001 <br>
+> 학습-검증을 교대로 수행하여 검증세트의 loss가 15번 연속 증가하는 경우 조기종료 <br>
 
-#### 1-2) 성능지표
+#### 학습-검증 오차 그래프
+<img width="302" height="230" alt="graph" src="https://github.com/user-attachments/assets/410ed0d8-71f0-4a5c-bd39-d7729390ce91" />
 
-#### 1-3) 입력 결과
+#### 성능지표
+<img width="159" height="50" alt="score" src="https://github.com/user-attachments/assets/7df28308-9d02-47b4-bfab-6fb4f26f4724" />
+
+#### 입력 결과
+<img width="271" height="471" alt="result" src="https://github.com/user-attachments/assets/652e035a-7ed0-4126-a89c-8434613d7473" />
+
 <br>
 
